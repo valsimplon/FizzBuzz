@@ -15,3 +15,17 @@ Ecrire un programme permettant l'affichage d'une série d'entier sur la sortie s
 Le programme sera lancé par la classe **co.simplon.prairie.Main** mais la logique métier sera portée par la classe **co.simplon.prairie.FizzBuzz**.
 
 Les tests unitaires présents dans **co.simplon.prairie.FizzBuzzTest** doivent passer au vert et être enrichis.
+
+## Outils ligne de commande (se placer à la racine du projet) :
+- Pour compiler les sources :
+  - Windows :
+  - Unix : javac src/main/java/co/simplon/prairie/*.java
+- Pour compiler les tests : 
+  - Windows :
+  - Unix : javac -cp "src/main/java:libs/*" src/test/java/co/simplon/prairie/*.java
+- Pour lancer les tests : 
+  - Windows :
+  - Unix : java -cp "src/test/java:libs/*" org.junit.runner.JUnitCore co.simplon.prairie.FizzBuzzTest
+- Pour lancer l'application : 
+  - Windows :
+  - Unix : java -cp "src/test/java" co.simplon.prairie.Main
