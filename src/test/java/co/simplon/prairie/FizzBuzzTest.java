@@ -40,7 +40,7 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void la_correspondance_de_6_est_Buzz() {
+    public void la_correspondance_de_6_est_Fizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 6 doit être Fizz.",
@@ -60,7 +60,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void la_correspondance_de_15_est_Buzz() {
+    public void la_correspondance_de_15_est_Fizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 15 doit être Fizz.",
