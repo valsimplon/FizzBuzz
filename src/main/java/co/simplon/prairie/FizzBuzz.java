@@ -23,7 +23,13 @@ public class FizzBuzz {
      * @param fin   Index (entier) de fin pour l'affichage
      */
     public void afficherListeEntiers(int debut, int fin) {
-        // TODO code à définir
+
+        int i;
+        
+        for (i = debut; i <= fin; i++);
+        {
+            System.out.println(i);
+        }
     }
 
     protected String determinerCorrespondance(int entier) {
@@ -32,22 +38,16 @@ public class FizzBuzz {
         //si modulo 5 alors BUZZ
         //sinon ecrire entier
  
-        if (entier == 0)
-        {
-            return Integer.toString(0);
+        if (entier == 0) {
+            return ("0");
         }
-        else if (entier % 3 == 0)
-        {
-          return "Fizz";
+        if (entier % 3 == 0) {
+            return "Fizz";
         }
-        else if (entier % 5 == 0)
-        {
-          return "Buzz";
+        if (entier % 5 == 0) {
+            return "Buzz";
         }
-        else
-        {
-            return Integer.toString(entier);
-        }
+        return Integer.toString(entier);
     }
 
 }
