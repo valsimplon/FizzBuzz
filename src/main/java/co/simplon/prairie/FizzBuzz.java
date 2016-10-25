@@ -37,15 +37,19 @@ public class FizzBuzz {
         // si modulo 3 alors FIZZ
         //si modulo 5 alors BUZZ
         //sinon ecrire entier
- 
-        if (entier == 0) {
-            return ("0");
+
+
+        if (entier == 0)
+        {
+            return "0";
         }
-        if (entier % 3 == 0) {
-            return "Fizz";
+        if (entier % 3 == 0)
+        {
+          return "Fizz";
         }
-        if (entier % 5 == 0) {
-            return "Buzz";
+        if (entier % 5 == 0)
+        {
+          return "Buzz";
         }
         return Integer.toString(entier);
     }
