@@ -1,6 +1,7 @@
 package co.simplon.prairie;
 
 import org.junit.Test;
+import org.junit.Before;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -8,9 +9,15 @@ import static org.junit.Assert.assertEquals;
  */
 public class FizzBuzzTest {
 
+    private FizzBuzz fizzBuzz;
+
+    @Before
+    public void init() {
+        fizzBuzz = new FizzBuzz();
+    }
+ 
     @Test
     public void la_correspondance_de_0_est_0() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 0 doit être 0.",
                 "0",
@@ -20,7 +27,6 @@ public class FizzBuzzTest {
 
     @Test
     public void la_correspondance_de_3_est_Fizz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 3 doit être Fizz.",
                 "Fizz",
@@ -30,7 +36,6 @@ public class FizzBuzzTest {
 
     @Test
     public void la_correspondance_de_5_est_Buzz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 5 doit être Buzz.",
                 "Buzz",
@@ -38,44 +43,21 @@ public class FizzBuzzTest {
         );
     }
 
-
-    @Test
-    public void la_correspondance_de_6_est_Fizz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        assertEquals(
-                "La correspondance pour 6 doit être Fizz.",
-                "Fizz",
-                fizzBuzz.determinerCorrespondance(6)
-        );
-    }
-
-    @Test
-    public void la_correspondance_de_10_est_Buzz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        assertEquals(
-                "La correspondance pour 10 doit être Buzz.",
-                "Buzz",
-                fizzBuzz.determinerCorrespondance(10)
-        );
-    }
-
     @Test
     public void la_correspondance_de_11_est_11() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 11 doit être 11.",
                 "11",
                 fizzBuzz.determinerCorrespondance(11)
         );
     }
-
-    public void la_correspondance_de_15_est_Fizz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
+    
+    @Test
+    public void la_correspondance_de_15_est_FizzBuzz() {
         assertEquals(
-                "La correspondance pour 15 doit être Fizz.",
-                "Fizz",
+                "La correspondance pour 11 doit être FizzBuzz.",
+                "FizzBuzz",
                 fizzBuzz.determinerCorrespondance(15)
         );
     }
-
 }

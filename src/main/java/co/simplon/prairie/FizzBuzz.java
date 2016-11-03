@@ -12,7 +12,7 @@ public class FizzBuzz {
     /**
      * Constructeur
      */
-    public void FizzBuzz() {
+    public FizzBuzz() {
     }
 
     /**
@@ -26,9 +26,8 @@ public class FizzBuzz {
 
         int i;
         
-        for (i = debut; i <= fin; i++);
-        {
-            System.out.println(i);
+        for (i = debut; i <= fin; i++) {
+            System.out.println(i + "   " + this.determinerCorrespondance(i));
         }
     }
 
@@ -42,6 +41,11 @@ public class FizzBuzz {
         if (entier == 0)
         {
             return "0";
+        }
+
+        if ((entier % 5 == 0) && (entier % 3 == 0))
+        {
+          return "FizzBuzz";
         }
         if (entier % 3 == 0)
         {
