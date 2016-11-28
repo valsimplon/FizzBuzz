@@ -31,6 +31,11 @@ public class FizzBuzz {
         }
     }
 
+    /**
+     * ce module attribue un string selon le modulo de l'entier (pair/impair)
+     * @param entier
+     * @return
+     */
     protected String determinerCorrespondance(int entier) {
         
         // si modulo 3 alors FIZZ
